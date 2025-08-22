@@ -778,7 +778,7 @@ img {
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   line-height: 1.17;
 }
@@ -790,7 +790,7 @@ img {
   color: #4d5ae5;
 }
 
-.modal-checkbox-icon {
+.checkbox-text span {
   display: inline-flex;
   width: 16px;
   height: 16px;
