@@ -606,6 +606,8 @@ img {
 }
 
 .modal {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 408px;
   min-height: 584px;
@@ -660,10 +662,6 @@ img {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-}
-
-.modal-form :first-child {
-  margin-bottom: 8px;
 }
 
 .modal-field {
@@ -747,20 +745,6 @@ img {
   margin-bottom: 24px;
   line-height: 1.17;
 }
-.modal-send {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  text-align: center;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
-  height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
-}
 
 .modal-field-chek {
   margin-bottom: 24px;
@@ -780,6 +764,7 @@ img {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+  margin-left: 4px;
 }
 
 .modal-checkbox:checked + .checkbox-text span {
@@ -789,6 +774,9 @@ img {
 }
 
 .modal-button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   min-width: 169px;
   height: 56px;
